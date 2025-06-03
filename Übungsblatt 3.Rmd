@@ -46,3 +46,28 @@ The possible values for `film_rating` are:
 Converting `film_rating` to a factor is appropriate because it is a categorical variable with a fixed set of possible values. Treating it as a factor allows R to handle it correctly in summaries, plots, and statistical models.
 
 
+### Part 3b: Identify film series and count entries
+
+We manually inspected the titles and assigned films to series based on shared keywords.
+
+```{r}
+pixar_clean$series <- NA
+pixar_clean$series[grepl("Toy Story", pixar_clean$film)] <- "Toy Story"
+pixar_clean$series[grepl("Cars", pixar_clean$film)] <- "Cars"
+pixar_clean$series[grepl("Finding", pixar_clean$film)] <- "Finding"
+pixar_clean$series[grepl("Monsters", pixar_clean$film)] <- "Monsters"
+pixar_clean$series[grepl("Incredibles", pixar_clean$film)] <- "Incredibles"
+
+library(dplyr)
+
+series_summary <- pixar_clean %>%
+  filter(!is.na(series)) %>%
+  group_by(series) %>%
+  summarise(
+    titles = paste(film, collapse = ", "),
+    count = n()
+  )
+
+series_summary
+```
+
