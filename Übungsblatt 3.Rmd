@@ -1,0 +1,23 @@
+---
+title: "Exercise Sheet 3"
+author: "Andrej Dragic (12803423)"
+date: "2025-06-03"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Exercise 1: Initializing git
+
+### 1d) Two strengths and two weaknesses of git
+
+**Strengths:**
+- Enables version control and team collaboration.
+- Allows easy rollback to previous versions.
+
+**Weaknesses:**
+- Merge conflicts can be complex for beginners.
+- Requires basic command line knowledge.
+
