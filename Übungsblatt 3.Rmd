@@ -94,3 +94,27 @@ combined <- merge(pixar_clean, public_response, by = "film")
 
 ```
 
+
+### Part 3d) Create a bar plot of public response by film series
+
+We plot Rotten Tomatoes scores for all Pixar films that belong to a series.
+
+```{r}
+library(ggplot2)
+
+ggplot(
+  data = combined[!is.na(combined$series), ],
+  aes(x = series, y = rotten_tomatoes, fill = film)
+) +
+  geom_bar(stat = "identity", position = position_dodge()) +
+  labs(
+    title = "Rotten Tomatoes Scores of Pixar Film Series",
+    x = "Film Series",
+    y = "Rotten Tomatoes Score",
+    fill = "Film Title"
+  ) +
+  theme_minimal()
+```
+
+The plot shows that within a series, the first film often receives the highest score (e.g. Toy Story, Cars). In some cases (like Finding Dory), the sequel maintains similar quality. The drop in scores across sequels may reflect audience fatigue or lower innovation.
+
