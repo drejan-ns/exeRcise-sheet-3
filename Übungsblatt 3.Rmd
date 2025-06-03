@@ -71,3 +71,26 @@ series_summary <- pixar_clean %>%
 series_summary
 ```
 
+
+### Part 3c: Load public_response and merge with pixar_clean
+
+We load the dataset, convert `cinema_score` to an ordered factor, and merge it with the main dataset.
+
+```{r}
+public_response <- read.csv("public_response.csv")
+
+# inspect unique values
+unique(public_response$cinema_score)
+
+# convert to ordered factor
+public_response$cinema_score <- factor(
+  public_response$cinema_score,
+  levels = c("A-", "A", "A+"),
+  ordered = TRUE
+)
+
+# merge datasets
+combined <- merge(pixar_clean, public_response, by = "film")
+
+```
+
