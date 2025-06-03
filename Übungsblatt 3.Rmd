@@ -26,4 +26,23 @@ knitr::opts_chunk$set(echo = TRUE)
 GitHub Repository:  
 [https://github.com/drejan-ns/exeRcise-sheet-3](https://github.com/drejan-ns/exeRcise-sheet-3)
 
-sd
+## Exercise 3: Pixar Films
+
+### Part 3a: Load and clean pixar_films dataset
+
+```{r}
+pixar <- read.csv("pixar_films.csv")
+pixar_clean <- subset(pixar, film != "")
+pixar_clean$film_rating <- factor(pixar_clean$film_rating)
+unique(pixar_clean$film_rating)
+table(pixar_clean$film_rating)
+```
+
+The possible values for `film_rating` are:
+- **G** (General Audience): Suitable for all ages.
+- **PG** (Parental Guidance): Some material may not be suitable for children.
+- **NA**: Rating is not available or missing.
+
+Converting `film_rating` to a factor is appropriate because it is a categorical variable with a fixed set of possible values. Treating it as a factor allows R to handle it correctly in summaries, plots, and statistical models.
+
+
