@@ -125,4 +125,14 @@ The plot shows that within a series, the first film often receives the highest s
 - Dataset Name: Alcohol consumption since 1890 (Alexander & Holmes, 2017)  
 - Link: https://github.com/owid/owid-datasets/tree/master/datasets/Alcohol%20consumption%20since%201890%20(Alexander%20%26%20Holmes%2C%202017)
 
+### Part 4d) Define a research question
+
+
+**Research Question:**  
+How has alcohol consumption per capita changed in Germany since 1950, and can we observe a significant long-term trend?
+
+**Why is it so interesting?**  
+Alcohol consumption is closely linked to public health. Observing long-term trends can provide insight into how policy, social change, and awareness may have influenced drinking habits over time.
+
+
 
