@@ -161,6 +161,32 @@ print(germany_subset)
 The data shows that alcohol consumption per capita in Germany has steadily decreased from around 12.9 litres in 1970 to 9.6 litres in 2014. This suggests a long-term downward trend in alcohol consumption over the past decades.
 The decline may reflect growing public health awareness, policy changes, or cultural shifts in attitudes toward drinking.
 
+### Part 4f) Creating a meaningful Plot 
+
+```{r}
+library(ggplot2)
+
+ggplot(germany_subset, aes(x = Year, y = Litres_per_person)) +
+  geom_line(color = "steelblue", size = 1) +
+  geom_point(color = "darkred", size = 2) +
+  labs(
+    title = "Alcohol Consumption in Germany (1950–2014)",
+    x = "Year",
+    y = "Litres per Person per Year"
+  ) +
+  theme_minimal()
+```
+
+
+**Plot Description:**
+
+The line plot shows the alcohol consumption per capita in Germany from 1960 to 2014. The values are given in litres per person per year. The data reveals a clear long-term decline in alcohol consumption. After peaking around 1970–1980 at nearly 13 litres, the values steadily dropped to below 10 litres by 2014.
+
+**Why this plot is meaningful:**
+
+This figure effectively illustrates the downward trend in alcohol consumption over the last decades. It helps identify turning points (e.g., post-1980) and could motivate further analysis into potential causes like policy changes, health awareness campaigns, or societal shifts. The simple design, consistent axis labels, and clear title support quick interpretation, making it both informative and accessible.
+
+
 
 
 
