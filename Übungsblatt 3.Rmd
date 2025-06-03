@@ -118,3 +118,11 @@ ggplot(
 
 The plot shows that within a series, the first film often receives the highest score (e.g. Toy Story, Cars). In some cases (like Finding Dory), the sequel maintains similar quality. The drop in scores across sequels may reflect audience fatigue or lower innovation.
 
+## Exercise 4: Open Analysis
+
+### Part 4c)
+
+- Dataset Name: Alcohol consumption since 1890 (Alexander & Holmes, 2017)  
+- Link: https://github.com/owid/owid-datasets/tree/master/datasets/Alcohol%20consumption%20since%201890%20(Alexander%20%26%20Holmes%2C%202017)
+
+
