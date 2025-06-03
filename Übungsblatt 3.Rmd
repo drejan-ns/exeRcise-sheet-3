@@ -135,4 +135,36 @@ How has alcohol consumption per capita changed in Germany since 1950, and can we
 Alcohol consumption is closely linked to public health. Observing long-term trends can provide insight into how policy, social change, and awareness may have influenced drinking habits over time.
 
 
+### Part 4e) Data Analysis in R
+
+
+```{r}
+# Load the dataset
+alcohol <- read.csv("alcohol_consumption.csv")
+
+# Inspect available column names
+names(alcohol)
+
+# Filter data for Germany and from year 1950 onward
+germany <- subset(alcohol, Entity == "Germany" & Year > 1950)
+
+# Select relevant columns and rename for clarity
+germany_subset <- germany[, c("Year", "Alcohol.consumption.since.1890..Alexander...Holmes..2017.")]
+names(germany_subset)[2] <- "Litres_per_person"
+
+# Display the resulting table
+print(germany_subset)
+```
+
+**Answer to Research Question: **
+
+The data shows that alcohol consumption per capita in Germany has steadily decreased from around 12.9 litres in 1970 to 9.6 litres in 2014. This suggests a long-term downward trend in alcohol consumption over the past decades.
+The decline may reflect growing public health awareness, policy changes, or cultural shifts in attitudes toward drinking.
+
+
+
+
+
+
+
 
