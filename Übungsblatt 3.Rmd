@@ -14,12 +14,14 @@ knitr::opts_chunk$set(echo = TRUE)
 ### 1d) Two strengths and two weaknesses of git
 
 **Strengths:**
-- Enables version control and team collaboration.
-- Allows easy rollback to previous versions.
+
+  - Enables version control and team collaboration.
+  - Allows easy rollback to previous versions.
 
 **Weaknesses:**
-- Merge conflicts can be complex for beginners.
-- Requires basic command line knowledge.
+
+  - Merge conflicts can be complex for beginners.
+  - Requires basic command line knowledge.
 
 ## Exercise 2: Putting your Repository on GitHub
 
@@ -185,12 +187,3 @@ The line plot shows the alcohol consumption per capita in Germany from 1960 to 2
 **Why this plot is meaningful:**
 
 This figure effectively illustrates the downward trend in alcohol consumption over the last decades. It helps identify turning points (e.g., post-1980) and could motivate further analysis into potential causes like policy changes, health awareness campaigns, or societal shifts. The simple design, consistent axis labels, and clear title support quick interpretation, making it both informative and accessible.
-
-
-
-
-
-
-
-
-
