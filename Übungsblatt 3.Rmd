@@ -41,6 +41,7 @@ table(pixar_clean$film_rating)
 ```
 
 The possible values for `film_rating` are:
+
 - **G** (General Audience): Suitable for all ages.
 - **PG** (Parental Guidance): Some material may not be suitable for children.
 - **NA**: Rating is not available or missing.
