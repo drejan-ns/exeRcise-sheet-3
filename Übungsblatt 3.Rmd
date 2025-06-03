@@ -1,8 +1,7 @@
 ---
-title: "Exercise 3"
-subtitle: "Fortgeschrittene Statistische Software für NF"
+title: "Exercise Sheet 3"
 author: "Andrej Dragic (12803423)"
-date: "`r Sys.Date()`"
+date: "2025-06-03"
 output: distill::distill_article
 ---
 
@@ -22,3 +21,7 @@ knitr::opts_chunk$set(echo = TRUE)
 - Merge conflicts can be complex for beginners.
 - Requires basic command line knowledge.
 
+## Exercise 2: Putting your Repository on GitHub
+
+GitHub Repository:  
+[https://github.com/drejan-ns/exeRcise-sheet-3](https://github.com/drejan-ns/exeRcise-sheet-3)
