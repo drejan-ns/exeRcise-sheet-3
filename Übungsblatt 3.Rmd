@@ -1,8 +1,9 @@
 ---
-title: "Exercise Sheet 3"
+title: "Exercise 3"
+subtitle: "Fortgeschrittene Statistische Software für NF"
 author: "Andrej Dragic (12803423)"
-date: "2025-06-03"
-output: html_document
+date: "`r Sys.Date()`"
+output: distill::distill_article
 ---
 
 ```{r setup, include=FALSE}
